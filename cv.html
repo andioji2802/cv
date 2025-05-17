@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Andi Khozin Mubarak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: blanchedalmond;
+            color: #000;
+            transition: background-color 0.5s, color 0.5s;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            border-radius: 15px;
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .biodata, .pendidikan, .pengalaman, .skill {
+            margin-bottom: 30px;
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .biodata:hover, .pendidikan:hover, .pengalaman:hover, .skill:hover {
+            transform: scale(1.02);
+        }
+
+        .baris {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .label {
+            width: 120px;
+            font-weight: bold;
+        }
+
+        .tdua {
+            width: 10px;
+        }
+
+        .isi {
+            flex: 1;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 30px;
+            transition: color 0.3s ease, transform 0.2s ease-in-out;
+        }
+        
+        .footer a:hover {
+            color: #0077b5; /* Warna hover LinkedIn, bisa diganti */
+            transform: scale(1.2);
+        }
+        .dark {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+          }
+        
+          .dark .biodata {
+            color: #000000;
+          }
+
+          .dark .pendidikan{
+            color: #000000;
+          }
+
+          .dark .pengalaman{
+            color: #000000;
+          }
+
+          .dark .skill{
+            color: #000000;
+          }
+        
+          .dark a {
+            color: #61dafb;
+          }
+        
+          .baris {
+            margin-bottom: 5px;
+          }
+        
+          button {
+            margin: 10px;
+            padding: 6px 12px;
+            cursor: pointer;
+          } 
+          
+          @media (max-width: 600px) {
+            .baris {
+                flex-direction: column;
+            }
+        
+            .label, .tdua, .isi {
+                width: 100%;
+            }
+        
+            .header img {
+                width: 100px;
+                height: auto;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .biodata, .pendidikan, .pengalaman {
+            animation: fadeInUp 0.8s ease;
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="toggle-theme" style="font-size: 24px; background: none; border: none; cursor: pointer;">🌙</button>
+    <div class="header">
+        <h3>Currculum Vitae</h3>
+        <img src="oji.png" width="200px auto" alt="Andi Oji">
+    </div>
+    <div class="biodata">
+        <p><b>Biodata Lengkap</b></p>
+        <div class="baris">
+            <span class="label">Nama</span>
+            <span class="tdua">:</span>
+            <span class="isi">Andi Khozin Mubarak</span>
+        </div>
+        <div class="baris">
+            <span class="label">Email</span>
+            <span class="tdua">:</span>
+            <span class="isi">akmaznur2802@gmail.com</span>
+        </div>
+        <div class="baris">
+            <span class="label">No. HP</span>
+            <span class="tdua">:</span>
+            <span class="isi">085399833542</span>
+        </div>
+        <div class="baris">
+            <span class="label">Alamat</span>
+            <span class="tdua">:</span>
+            <span class="isi">Perumahan Bukit Grandmas 2, Blok B4 No. 10, Jl. Borong Sapiri, Kab. Gowa</span>
+        </div>
+    </div>
+    <div class="pendidikan">
+        <p><b>Pendidikan Terakhir</b></p>
+        <ol>
+            <li>
+                <b>2020 - 2024</b> Universitas Handayani Makassar
+            </li>
+            <li>
+                <b>2017 - 2020</b> UPT SMAN 2 Sinjai
+            </li>
+            <li>
+                <b>2014 - 2017</b> SMPN 6 Sinjai Selatan sekarang UPTD SMPN 23 Sinjai
+            </li>
+        </ol>
+    </div>
+    <div class="pengalaman">
+        <p><b>Pengalaman</b></p>
+        <ul>
+            <li>
+                <b>CEO/Pendiri</b> Komunitas Indonesian Moeslim Friends 
+            </li>
+            <li>
+                <b>Divisi Dakwah dan Kaderisasi</b> Lembaga Dakwah Kampus Forum Komunikasi Mahasiswa Islam Universitas Handayani Makassar
+            </li>
+            <li>
+                <b>Anggota Biasa</b> Ceotech Universitas Handayani Makassar
+            </li>
+        </ul>
+    </div>
+    <div class="skill">
+        <p><b>Keahlian</b></p>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>PHP & MySQL</li>
+            <li>Version Control (Git)</li>
+            <li>Public Speaking & Leadership</li>
+        </ul>
+    </div>    
+    <div class="footer">
+        <a href="https://www.instagram.com/andioji_28" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/6285399833542" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/andikhozinmubarakskom" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/andioji2802" target="_blank"><i class="fab fa-github"></i></a>
+        <p>&copy; <span id="tahun"></span> Andi Khozin Mubarak</p>
+    </div>
+</body>
+<script>
+    document.getElementById('tahun').textContent = new Date().getFullYear();
+</script>
+<script>
+    const toggleBtn = document.getElementById("toggle-theme");
+    let darkMode = false;
+    
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        darkMode = !darkMode;
+        toggleBtn.textContent = darkMode ? "☀️" : "🌙";
+    });
+    </script>
+    
+</html>
